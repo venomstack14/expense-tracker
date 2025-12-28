@@ -28,6 +28,8 @@ It helps users track income and expenses month-wise, set spending limits, and vi
 
 ---
 
-## 📂 Project Structure
+## 🚀 Live Demo
+🔗 https://venomstack14.github.io/expense-tracker/
+
 
 
