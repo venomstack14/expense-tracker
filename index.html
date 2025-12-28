@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>Expense Tracker</h1>
+    <div class="top-controls">
+      <input type="month" id="monthPicker">
+      <button id="themeToggle" title="Toggle theme">🌙</button>
+    </div>
+  </header>
+
+  <section class="summary">
+    <div class="card">
+      <p>Income</p>
+      <h2 id="income">₹0</h2>
+    </div>
+    <div class="card">
+      <p>Expense</p>
+      <h2 id="expense">₹0</h2>
+    </div>
+    <div class="card">
+      <p>Balance</p>
+      <h2 id="balance">₹0</h2>
+    </div>
+  </section>
+
+  <section class="limit">
+    <input type="number" id="limitInput" placeholder="Set monthly expense limit">
+    <span id="limitWarning"></span>
+  </section>
+
+  <section class="form">
+    <input id="title" placeholder="Transaction title">
+    <input id="amount" type="number" placeholder="Amount">
+    <select id="category">
+      <option>Food</option>
+      <option>Transport</option>
+      <option>Shopping</option>
+      <option>Entertainment</option>
+      <option>Other</option>
+    </select>
+    <select id="type">
+      <option value="expense">Expense</option>
+      <option value="income">Income</option>
+    </select>
+    <button id="addBtn">Add Transaction</button>
+  </section>
+
+  <section id="list"></section>
+
+  <section class="charts">
+    <canvas id="pieChart" width="260" height="260"></canvas>
+  </section>
+
+  <div id="undoToast">
+    Transaction deleted
+    <button id="undoBtn">Undo</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
